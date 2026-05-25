@@ -5,20 +5,20 @@ This repository contains the supplementary materials and demonstration videos as
 **[1]** Italo Napolitano, Mario di Bernardo, *"Semidiscrete Optimal Transport for Time-Varying Multi-Agent Coverage Control,"* 2026.  
 
 # Repository structure  
-- **`bimodal2D.mp4`**: Simulation from Section 4.2 (Fig. 1 in [1]). Eight agents (black dots) track the time-varying target 2D distribution (colormap) which (1) has mean varying linearly and variance varing sinusoidally time; (2) splits into a bimodal distribution with constant variance and mean varying linearly in time.
-- **`exp2D_W_formation_control.pdf`**: Wasserstein error over time related to the experiment `bimodal2D.mp4` (simulation from Section 4.2).
-- **`monomodal2D.mp4`**: Additional simulation. Seven agents (black dots) track the time-varying target 2D monomodal distribution (colormap) whose mean varies linearly in time.
-- **`exp2D_W.pdf`**: Wasserstein error over time related to the experiment `monomodal2D.mp4` (Additional 2D simulation).
-- **`tracking_OT_1D_exp1.mp4`**: Simulation from Section 5.1 (Fig. 2a in [1]). Five agents (black dots) track the time-varying target 1D monomodal distribution (red line) whose mean varies linearly in time.
-- **`tracking_OT_1D_exp2.mp4`**: Simulation from Section 5.1 (Fig. 2b in [1]). Five agents (black dots) track the time-varying target 1D monomodal distribution (red line) whose mean and variance vary sinusoidally in time.
-- **`tracking_OT_1D_exp3.mp4`**: Additional simulation. Five agents (black dots) track the time-varying target 1D bimodal distribution (red line) whose mean varies linearly in time.
+- **`MOVIE1.mp4`**: Simulation from Section 4.2 (Fig. 1 in [1]). Eight agents (black dots) track the time-varying target 2D distribution (colormap) which (1) has mean varying linearly and variance varing sinusoidally time; (2) splits into a bimodal distribution with constant variance and mean varying linearly in time.
+- **`MOVIE1_Wasserstein.pdf`**: Wasserstein error over time related to the experiment `bimodal2D.mp4` (simulation from Section 4.2).
+- **`MOVIE2.mp4`**: Additional simulation. Seven agents (black dots) track the time-varying target 2D monomodal distribution (colormap) whose mean varies linearly in time.
+- **`MOVIE2_Wasserstein.pdf`**: Wasserstein error over time related to the experiment `monomodal2D.mp4` (Additional 2D simulation).
+- **`MOVIE3.mp4`**: Simulation from Section 5.1 (Fig. 2a in [1]). Five agents (black dots) track the time-varying target 1D monomodal distribution (red line) whose mean varies linearly in time.
+- **`MOVIE4.mp4`**: Simulation from Section 5.1 (Fig. 2b in [1]). Five agents (black dots) track the time-varying target 1D monomodal distribution (red line) whose mean and variance vary sinusoidally in time.
+- **`MOVIE5.mp4`**: Additional simulation. Five agents (black dots) track the time-varying target 1D bimodal distribution (red line) whose mean varies linearly in time.
 
 # Additional simulations
 ## Sec. 4.2 additional simulation
-Validation in a two-dimensional domain where $7$ agents track a Gaussian distribution $\mathcal{N}(\boldsymbol{m}(t), \boldsymbol{\Sigma})$ with linearly moving mean $\dot{\boldsymbol{m}}(t) = [v_{m,x}, v_{m,y}]$. The agents, initialized at random positions, rapidly reposition to cover the target and continue tracking it as the distribution moves across the domain. The related video can be found in  `monomodal2D.mp4`.
+Validation in a two-dimensional domain where $7$ agents track a Gaussian distribution $\mathcal{N}(\boldsymbol{m}(t), \boldsymbol{\Sigma})$ with linearly moving mean $\dot{\boldsymbol{m}}(t) = [v_{m,x}, v_{m,y}]$. The agents, initialized at random positions, rapidly reposition to cover the target and continue tracking it as the distribution moves across the domain. The related video can be found in  `MOVIE2.mp4`.
 
 ## Sec. 6 additional simulation
-Validation in a one-dimensinal domani, where $5$ agents track a bimodal Gaussian distribution $0.5 \mathcal{N}(m_1(t), \sigma) + 0.5 \mathcal{N}(m_2(t), \sigma)$ with $\dot m_{i} (t)  = v_{m,i}$. The agents split into two groups near the peaks, accurately reproducing the target density. The related video can be found in  `tracking_OT_1D_exp3.mp4`.
+Validation in a one-dimensinal domani, where $5$ agents track a bimodal Gaussian distribution $0.5 \mathcal{N}(m_1(t), \sigma) + 0.5 \mathcal{N}(m_2(t), \sigma)$ with $\dot m_{i} (t)  = v_{m,i}$. The agents split into two groups near the peaks, accurately reproducing the target density. The related video can be found in  `MOVIE5.mp4`.
 
 # Performance metrics
 *Performance metrics for TV-OT, TV-V, and OTCC across the three scenarios in Sec.6, where scenario 3 refers to the additional simulation presented in this repository.*
