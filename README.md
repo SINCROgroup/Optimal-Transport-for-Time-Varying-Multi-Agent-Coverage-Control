@@ -6,9 +6,9 @@ This repository contains the supplementary materials and demonstration videos as
 
 # Repository structure  
 - **`MOVIE1.mp4`**: Simulation from Section 4.2 (Fig. 1 in [1]). Eight agents (black dots) track the time-varying target 2D distribution (colormap) which (1) has mean varying linearly and variance varing sinusoidally time; (2) splits into a bimodal distribution with constant variance and mean varying linearly in time.
-- **`MOVIE1_Wasserstein.pdf`**: Wasserstein error over time related to the experiment `bimodal2D.mp4` (simulation from Section 4.2).
+- **`MOVIE1_Wasserstein.pdf`**: Wasserstein error over time related to the experiment `MOVIE1.mp4` (simulation from Section 4.2).
 - **`MOVIE2.mp4`**: Additional simulation. Seven agents (black dots) track the time-varying target 2D monomodal distribution (colormap) whose mean varies linearly in time.
-- **`MOVIE2_Wasserstein.pdf`**: Wasserstein error over time related to the experiment `monomodal2D.mp4` (Additional 2D simulation).
+- **`MOVIE2_Wasserstein.pdf`**: Wasserstein error over time related to the experiment `MOVIE2.mp4` (Additional 2D simulation).
 - **`MOVIE3.mp4`**: Simulation from Section 5.1 (Fig. 2a in [1]). Five agents (black dots) track the time-varying target 1D monomodal distribution (red line) whose mean varies linearly in time.
 - **`MOVIE4.mp4`**: Simulation from Section 5.1 (Fig. 2b in [1]). Five agents (black dots) track the time-varying target 1D monomodal distribution (red line) whose mean and variance vary sinusoidally in time.
 - **`MOVIE5.mp4`**: Additional simulation. Five agents (black dots) track the time-varying target 1D bimodal distribution (red line) whose mean varies linearly in time.
