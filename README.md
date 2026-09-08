@@ -1,4 +1,4 @@
-# Optimal Transport for Time-Varying Multi-Agent Coverage Control
+# Semi-discrete Optimal Transport for Time-Varying Multi-Agent Coverage Control
 
 This repository contains the supplementary materials and demonstration videos associated with the paper:  
 
@@ -14,7 +14,7 @@ This repository contains the supplementary materials and demonstration videos as
 - **`MassError_1Dbimodal.pdf`**: Mass error norm over time related to the experiment `MOVIE_1Dbimodal.mp4` (simulation from Section 5), comparing TVOT-C (black solid lines); TVOT-D$_1$ (dashed red lines); TVOT-G (solid blue lines); OTCC \cite{inoue2020optimal} (solid green lines); TVV-C \cite{lee2015multirobot} (dashed brown lines).
 
 # Additional simulation
-Validation in a one-dimensinal domanin, where $5$ agents track a bimodal Gaussian distribution $0.5 \mathcal{N}(m_1(t), \sigma) + 0.5 \mathcal{N}(m_2(t), \sigma)$ with $\dot m_{i} (t)  = v_{m,i}$. The agents split into two groups near the peaks, accurately reproducing the target density.
+Validation in a one-dimensinal domanin, where $5$ agents track a bimodal Gaussian distribution $0.5 \mathcal{N}(m_1(t), \sigma) + 0.5 \mathcal{N}(m_2(t), \sigma)$ with $\dot m_{i} (t)  = v_{m,i}$. The agents split into two groups near the peaks, accurately reproducing the target density. In the centralized solution, the middle agent positions itself in the valley between the two modes to guarantee equal mass partition of the domain. All other solutions have uneven partitioning of the agents among the two modes. This major difference validates that the proposed centralized solution is global in 1D.
 
 # Quantitative analysis
 *Performance metrics where $\mathcal{W}_2:=\limsup_{t \to \infty} \mathcal{W}_2(\mu_t, \bar \mu_t)$; $e_p:=\limsup_{t \to \infty} \lVert e_p \rVert$, and $e_p:=\limsup_{t \to \infty} \lVert e_p \rVert$.*
@@ -49,7 +49,7 @@ Validation in a one-dimensinal domanin, where $5$ agents track a bimodal Gaussia
 | $\boldsymbol{z}_0(0)$ | $\mathbf{0}_N$ | $\boldsymbol{z}_0(0)$ | $\mathbf{0}_N$ |
 
 
-*Parameters used in the 1D experiment.*
+*Parameters used in the 1D experiments.*
 | Parameter | Sinusoidal | Bimodal |
 |---|---:|---:|
 | $\Omega$ | $[0,50]$ | $[0,50]$ |
